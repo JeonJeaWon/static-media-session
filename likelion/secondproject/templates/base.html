@@ -1,0 +1,14 @@
+
+<div class="navbar">
+        <a class="nav-item nav-link" href="{% url 'home' %}">Home</span></a>
+        <a class="nav-item nav-link" href="{% url 'new' %}">글쓰기</a>
+        <a class="nav-item nav-link" href="#">수료증</a>
+        <a class="nav-item nav-link" href="{% url 'portfolio' %}">포트폴리오</a>
+ </div>
+
+ <!-- 이 아래에 콘텐츠가 올 예정입니다 선언-->
+
+ {% block contents%}
+ <!--title 이라면 block title/ footer이면 block footer로 작성 -->
+<!-- 여기에 겹치지 않는 콘텐츠가 위치함 -->
+ {% end block%}
